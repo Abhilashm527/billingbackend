@@ -15,7 +15,7 @@ public class FarmerController {
     @Autowired
     private FarmerImpl farmerImpl;
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "https://main--enchanting-tiramisu-ddf680.netlify.app")
     @PostMapping("/addFarmer")
     public ResponseEntity addFarmer(@RequestBody Farmer farmer) throws SQLException {
       Farmer farmer1 = farmerImpl.create(farmer);
