@@ -16,7 +16,7 @@ public class FarmerDayDetailsController {
     @Autowired
     private FarmerDayImpl farmerDayImpl;
 
-    @CrossOrigin(origins = "https://main--enchanting-tiramisu-ddf680.netlify.app")
+    @CrossOrigin(origins = "https://enchanting-tiramisu-ddf680.netlify.app/")
     @PostMapping("/addFarmerDaydetails")
     public ResponseEntity addFarmer(@RequestBody FarmerDayData farmerDayData) throws SQLException {
          FarmerDayData farmerDayData1 =farmerDayImpl.createFramerDaydetails(farmerDayData);

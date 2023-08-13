@@ -10,7 +10,7 @@ public class CorsConfiguration implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("https://main--enchanting-tiramisu-ddf680.netlify.app") // Replace with your React frontend URL
+                .allowedOrigins("https://enchanting-tiramisu-ddf680.netlify.app/") // Replace with your React frontend URL
                 .allowedMethods("GET", "POST", "PUT", "DELETE")
                 .allowCredentials(true);
     }
